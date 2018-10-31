@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.Hashland=/luci-static/hashland
+	set luci.main.mediaurlbase=/luci-static/hashland
+	commit luci
+EOF
+exit 0
